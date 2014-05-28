@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ROOT>
+<input type = "checkbox" id = "input1" value = "INIT_REPEAT_ALL">
+是否默认全碟播放？    
+</input>
+
+<input type = "checkbox" id = "input2" value = "AUTO_SLOT_IN_DISC_PLAY">
+检测有碟插入自动播放
+</input>
+
+<input type = "select" id = "input3" value = "DEFAULT_LANGUAGE">
+    <item value = "0">English</item>
+    <item value = "1">Chinese</item>
+    <item value = "2">Russian</item>
+</input>
+
+</ROOT>

@@ -1,0 +1,422 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=GB2312" />
+		<title>Software config tool-胡工设计</title>
+		<script type = "text/javascript" defer=true src="new_file.js"></script>
+
+	</head>
+
+	<body>
+		<hr />
+		<form>
+
+			<input type="checkbox" value="SUPPORT_TV">
+			是否支持TV(如果是DTV或者64位游戏也要选择)？
+			<br />
+
+			<input type="checkbox" value="SUPPORT_ET_GAME64">
+			是否支持64位游戏模块？
+			<br />
+			<input type="checkbox" value="SUPPORT_ET_DVB">
+			是否支持DTV？
+			<br />
+			<hr />
+
+			<input type="checkbox" value = "INIT_REPEAT_ALL">
+			默认全碟重复？
+			<br />
+			<hr />
+			<input type="checkbox" value = "USE_JDF_TFT">
+			使用京东方屏？
+			<br />
+			<input type="checkbox" value = "USE_LONGTEN_TFT">
+			使用龙腾屏？
+			<br />
+			<input type="checkbox" value = "YILI_TIMING">
+			使用屹立ic？（只有使用屹立ic的屏才要选此项）
+			<br />
+			<hr />
+			<input type="checkbox" value = "SUPPORT_FALSE_DPF">
+			仿数码相框？
+			<br />
+			
+		</form>
+		<hr />
+
+		<form>
+			<input type="radio" name="irKeyType"  value="GENERAL_PORTABLE_8202KA_64_DVD" >
+			是否8202KA？
+			<br />
+			<input type="radio" name="irKeyType" checked="checked" value="GENERAL_PORTABLE_8202KD_64_DVD" >
+			是否8202KD？
+			<br />
+		</form>
+		<hr />
+
+		<form>
+			<input type="radio" name="irKeyType" checked="checked" value="USE_55KEYS_IR" >
+			是否支持55键？
+			<br />
+			<input type="radio" name="irKeyType" value="USE_44KEYS_IR" >
+			是否支持44键？
+			<br />
+		</form>
+		<hr />
+		
+		<form>
+			<input type="radio" name="irKeyType" checked="checked" value="ADD_890MHZ_FMTX" >
+			FMTX频率范围是87.7MHz--89.0MHz？
+			<br />
+			<input type="radio" name="irKeyType" value="ADD_1079MHZ_FMTX" >
+			FMTX频率增加107.9MHz？
+			<br />
+			<input type="radio" name="irKeyType" value="STD_FMTX" >
+			FMTX频率87.5MHz--88.7MHz？
+			<br />
+		</form>
+		<hr />
+
+		<form>
+			<input type="radio" name="irKeyType" checked="checked"  value="DEFAULT_OSD_ENGLISH" >
+			是否默认英文？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_SPANISH" >
+			是否默认西班牙文？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_TURKISH" >
+			是否默认土耳其？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_ITALIAN" >
+			是否默认意大利语？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_ARABIC" >
+			是否默认阿拉伯语？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_JAPANESE" >
+			是否默认日文？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_RUSSIAN" >
+			是否默认俄语？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_KOREAN" >
+			是否默认韩语？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_PORTUGUESE" >
+			是否默认葡萄牙语？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_THAI" >
+			是否默认泰语？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_CHINESE" >
+			是否默认中文？
+			<br />
+			<input type="radio" name="irKeyType" value="DEFAULT_OSD_GERMANY" >
+			是否默认德文？
+			<br />
+			
+
+		</form>
+		<hr />
+
+		<form>
+			请选择开机画面：
+			<select  name = "CUSTOM_LOGO">
+				<option>logo_fuzhen_game32dvd</option>
+				<option>logo_fuzhen_dpf2 </option>
+				<option>logo_155audi</option>
+				<option>logo_155benz</option>
+				<option>logo_155bmw</option>
+				<option>logo_155chery</option>
+				<option>logo_155honda</option>
+				<option>logo_155hyundai</option>
+				<option>logo_155infiniti</option>
+				<option>logo_155kia</option>
+				<option>logo_155lexus</option>
+				<option>logo_155mazda</option>
+				<option>logo_155mitsubishi</option>
+				<option>logo_155nissan</option>
+				<option>logo_155suzuki</option>
+				<option>logo_155toyota</option>
+				<option>logo_155xiefulai</option>
+				<option>logo_222_wv</option>
+				<option>logo_309_buick </option>
+				<option>logo_309_byd </option>
+				<option>logo_309_changan </option>
+				<option>logo_309_changchen </option>
+				<option>logo_309_chevrolet </option>
+				<option>logo_309_citroen </option>
+				<option>logo_309_dasauto </option>
+				<option>logo_309_ford </option>
+				<option>logo_309_guangqi </option>
+				<option>logo_309_honda </option>
+				<option>logo_309_huatai </option>
+				<option>logo_309_hyunoai </option>
+				<option>logo_309_jac </option>
+				<option>logo_309_kia </option>
+				<option>logo_309_mazda </option>
+				<option>logo_309_nissan </option>
+				<option>logo_309_rongwei </option>
+				<option>logo_309_toyota </option>
+				<option>logo_309_yiqicar </option>
+				<option>logo_309_zhonghua </option>
+				<option>logo_999_toyota </option>
+				<option>logo_acv</option>
+				<option>logo_acesdvds</option>
+				<option>logo_acuraVision</option>
+				<option>logo_allinOne</option>
+				<option>logo_alfaromea</option>
+				<option>logo_arena</option>
+				<option>logo_arena_bentian</option>
+				<option>logo_arena_benzhi</option>
+				<option>logo_arena_bmw</option>
+				<option>logo_arena_fongtian</option>
+				<option>logo_arena_nissan</option>
+				<option>logo_audi</option>
+				<option>logo_audi3</option>
+				<option>logo_autobarn</option>
+				<option>logo_autoleck</option>
+				<option>logo_autoleck_www</option>
+				<option>logo_autotain</option>
+				<option>logo_avelino</option>
+				<option>logo_avelino2</option>
+				<option>logo_avlon</option>
+				<option>logo_azitek</option>
+				<option>logo_badreldeen</option>
+				<option>logo_beat</option>
+				<option>logo_beeper909</option>
+				<option>logo_beltek</option>
+				<option>logo_benz_blue</option>
+				<option>logo_black</option>
+				<option>logo_bluecolor</option>
+				<option>logo_bluevision</option>
+				<option>logo_bmw </option>
+				<option>logo_bmw_black </option>
+				<option>logo_bmboschmann2 </option>
+				<option>logo_bm_boschmann </option>
+				<option>logo_boomerang</option>
+				<option>logo_booster</option>
+				<option>logo_boss_red</option>
+				<option>logo_brilliant</option>
+				<option>logo_c_quins</option>
+				<option>logo_carscreen</option>
+				<option>logo_car_alfa_romeo </option>
+				<option>logo_car_audi </option>
+				<option>logo_car_bmw </option>
+				<option>logo_car_buick </option>
+				<option>logo_car_chevrolet </option>
+				<option>logo_car_chevrolet2 </option>
+				<option>logo_car_citroen</option>
+				<option>logo_car_fiat </option>
+				<option>logo_car_ford </option>
+				<option>logo_car_ford_white </option>
+				<option>logo_car_greatway </option>
+				<option>logo_car_honda </option>
+				<option>logo_car_hyundai </option>
+				<option>logo_car_kia </option>
+				<option>logo_car_land_rover </option>
+				<option>logo_car_mazda </option>
+				<option>logo_car_mercedes </option>
+				<option>logo_car_mitsubishi </option>
+				<option>logo_car_nissan </option>
+				<option>logo_car_opel </option>
+				<option>logo_car_peugeot </option>
+				<option>logo_car_porsche </option>
+				<option>logo_car_renault </option>
+				<option>logo_car_seat </option>
+				<option>logo_car_skoda </option>
+				<option>logo_car_subaru </option>
+				<option>logo_car_suzuki </option>
+				<option>logo_car_toyata </option>
+				<option>logo_car_volkswagen </option>
+				<option>logo_car_volvo </option>
+				<option>logo_car_x</option>
+				<option>logo_carz_chrysler </option>
+				<option>logo_carz_hyundai </option>
+				<option>logo_carz_kia </option>
+				<option>logo_carz_ssangyong </option>
+				<option>logo_carz_toyota </option>
+				<option>logo_carz_wfinder </option>
+				<option>logo_caraudiovideo</option>
+				<option>logo_cartronicsca</option>
+				<option>logo_carvision </option>
+				<option>logo_carvisionuk </option>
+				<option>logo_citroen_car </option>
+				<option>logo_clayton </option>
+				<option>logo_climber </option>
+				<option>logo_compant </option>
+				<option>logo_cr_v </option>
+				<option>logo_cr_v_car </option>
+				<option>logo_cuclone </option>
+				<option>logo_digibraz </option>
+				<option>logo_digoptions </option>
+				<option>logo_directvision </option>
+				<option>logo_doyles </option>
+				<option>logo_doylesincar </option>
+				<option>logo_dp </option>
+				<option>logo_eagle_head</option>
+				<option>logo_Elmansy</option>
+				<option>logo_elsayed</option>
+				<option>logo_elinz</option>
+				<option>logo_elinz2</option>
+				<option>logo_Etech</option>
+				<option>logo_f7</option>
+				<option>logo_faraz</option>
+				<option>logo_fivestar</option>
+				<option>logo_foozhan</option>
+				<option>logo_ford_black</option>
+				<option>logo_fultron </option>
+				<option>logo_fultron_carsys </option>
+				<option>logo_fultron_audiocar </option>
+				<option>logo_fw_audi </option>
+				<option>logo_fw_benz </option>
+				<option>logo_fw_bmw1 </option>
+				<option>logo_fw_bmw2 </option>
+				<option>logo_fw_ford </option>
+				<option>logo_fw_landrover </option>
+				<option>logo_fw_vw </option>
+				<option>logo_galaxy </option>
+				<option>logo_gemini </option>
+				<option>logo_gmc </option>
+				<option>logo_hitv</option>
+				<option>logo_hitv_www</option>
+				<option>logo_holden</option>
+				<option>logo_hollywood</option>
+				<option>logo_hosgeldiniz</option>
+				<option>logo_hoofd_dvd7</option>
+				<option>logo_hoofd_dvd9</option>
+				<option>logo_hoofdsteunen_d</option>
+				<option>logo_hoofdsteunen_m</option>
+				<option>logo_hyundai2</option>
+				<option>logo_hyundai_logo2</option>
+				<option>logo_iimatra</option>
+				<option>logo_imp</option>
+				<option>logo_inat</option>
+				<option>logo_inat2</option>
+				<option>logo_IHNAVI</option>
+				<option>logo_jac</option>
+				<option>logo_jaguar</option>
+				<option>logo_jvj</option>
+				<option>logo_jvjcar</option>
+				<option>logo_kennon</option>
+				<option>logo_kingco</option>
+				<option>logo_kt5</option>
+				<option>logo_ladillac</option>
+				<option>logo_landrover</option>
+				<option>logo_lexus</option>
+				<option>logo_logigo</option>
+				<option>logo_longterm</option>
+				<option>logo_m1</option>
+				<option>logo_map</option>
+				<option>logo_marshal</option>
+				<option>logo_massa</option>
+				<option>logo_matrix</option>
+				<option>logo_maxors</option>
+				<option>logo_mebbasayar</option>
+				<option>logo_megmudio</option>
+				<option>logo_meos</option>
+				<option>logo_miray </option>
+				<option>logo_miray_new </option>
+				<option>logo_mitsubishi</option>
+				<option>logo_mgarager</option>
+				<option>logo_mobile </option>
+				<option>logo_mobile_meoia </option>
+				<option>logo_mobiletek </option>
+				<option>logo_mongoose </option>
+				<option>logo_morel </option>
+				<option>logo_morel2 </option>
+				<option>logo_morel3 </option>
+				<option>logo_moviesion </option>
+				<option>logo_native_game</option>
+				<option>logo_navaudio</option>
+				<option>logo_navimex</option>
+				<option>logo_navix</option>
+				<option>logo_naviin</option>
+				<option>logo_nesa</option>
+				<option>logo_nippotec</option>
+				<option>logo_night</option>
+				<option>logo_ONEcar_Logo</option>
+				<option>logo_opera</option>
+				<option>logo_ouku</option>
+				<option>logo_peninsula</option>
+				<option>logo_plexon</option>
+				<option>logo_poronix</option>
+				<option>logo_powerpack</option>
+				<option>logo_proton</option>
+				<option>logo_proton_black</option>
+				<option>logo_proton_new</option>
+				<option>logo_raymos </option>
+				<option>logo_radiant </option>
+				<option>logo_rd </option>
+				<option>logo_ros </option>
+				<option>logo_rogers </option>
+				<option>logo_sh </option>
+				<option>logo_sierra </option>
+				<option>logo_simiya </option>
+				<option>logo_sonics </option>
+				<option>logo_sony_dvdvideo</option>
+				<option>logo_sony_Japan</option>
+				<option>logo_sonyMP4_malaysia</option>
+				<option>logo_sony_malizea</option>
+				<option>logo_sooudio </option>
+				<option>logo_storm </option>
+				<option>logo_StrappFord </option>
+				<option>logo_svp </option>
+				<option>logo_tossa </option>
+				<option>logo_toyota_black </option>
+				<option>logo_toyota_blue </option>
+				<option>logo_toyota_white </option>
+				<option>logo_toyota_336 </option>
+				<option>logo_toyota5 </option>
+				<option>logo_tronix </option>
+				<option>logo_tts </option>
+				<option>logo_ultrasonic </option>
+				<option>logo_ultrasonic_old </option>
+				<option>logo_vision</option>
+				<option>logo_visionaire</option>
+				<option>logo_volvo</option>
+				<option>logo_vmteq</option>
+				<option>logo_wfinder</option>
+				<option>logo_wv_das</option>
+				<option>logo_worldtech</option>
+				<option>logo_xbs </option>
+				<option>logo_xbs2 </option>
+				<option>logo_xomax</option>
+				<option>logo_xtrons</option>
+				<option>logo_xtrons_black</option>
+				<option>logo_zeros</option>
+				<option>logo_zicom</option>
+				<option>logo_zydvd1</option>
+
+			</select>
+			 在此手工输入开机画面：
+			<input type="text" id="idmylogo" />
+			
+		</form>
+		
+		<hr />
+		<form>
+			请选择默认音量级别：
+			<select  name = "VOL_VALUE">
+				<option>15</option>
+				<option>12</option>
+			</select>
+		</form>
+		<hr />
+		<form>
+			请选择默认区码：
+			<select  name = "REGION_NUM">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			</select>
+		</form>
+		<hr />
+				
+		<input type="button" value="输出文件" onclick=print_text()>
+		<input type="button" value="重置所有" onclick=resetall()>
+	</body>
+</html>

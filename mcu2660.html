@@ -1,0 +1,160 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=GB2312" />
+		<title>2660 MCU config tool-胡工设计</title>
+		
+
+	</head>
+
+	<body>
+		
+		<hr />
+		<form id="idModeType">
+			选择PCB类型<br />	
+			<input type="radio" id="idMdStd" name="irKeyType" checked="checked"  value="_PCB_FZ_888B_RTD" >
+			普通数字屏类型（包括666,888，1002）
+			<br />
+			<input type="radio" id="idMdDpf" name="irKeyType" value="_PCB_FZ_888DPF_RTD" >
+			仿数码相框方案
+			<br />
+			<input type="radio" id="idMd3001" name="irKeyType" value="_PCB_FZ_3001_RTD" >
+			3001机型
+			<br />
+			<input type="radio" id="idMd3001Base" name="irKeyType" value="_PCB_FZ_2660_RTD" >
+			基于3001 io口的机型
+			<br />
+			<input type="radio" id="idMd1004" name="irKeyType" value="_PCB_FZ_1004_RTD" >
+			1004机型(包括1005机型，或带HDMI的)
+			<br />
+
+		</form>
+		<hr />
+<form >
+			选择面板类型<br />	
+			<input type="radio" id="idPanel666" name="irKeyType" checked="checked"  value="USE_666_PANEL" >
+			666面板(与888区别是屏幕反过来)
+			<br />
+			<input type="radio" id="idPanel888" name="irKeyType" value="USE_888_PANEL" >
+			888(包括1005，与999区别是音量按键不同)
+			<br />
+			<input type="radio" id="idPanel999" name="irKeyType" value="USE_999_PANEL" >
+			999面板
+			<br />
+			<input type="radio" id="idPanel1003" name="irKeyType" value="USE_1003_IR_PANEL" >
+			1003感应按键面板
+			<br />
+			<input type="radio" id="idPanel1004" name="irKeyType" value="USE_1004_PANEL" >
+			1004面板（前面选了1004机型，才可以选此项，包含1003面板ir按键）
+			<br />
+
+			<input type="radio" id="idPanel1005" name="irKeyType" value="USE_1005_PANEL" >
+			1005面板（前面选了1004机型，才可以选此项，与1004差别是屏倒过来）
+			<br />
+
+		</form>
+		
+		<hr />
+		<form>
+			<input type="radio" id="id55Key" name="irKeyType" checked="checked" value="USE_55KEYS_IR" >
+			是否支持55键？
+			<br />
+			<input type="radio" id="id44Key" name="irKeyType" value="USE_44KEYS_IR" >
+			是否支持44键？
+			<br />
+		</form>
+		<hr />
+
+		<form>
+			<input type="radio" id="idEnglish" name="irKeyType" checked="checked"  value="DEFAULT_OSD_ENGLISH" >
+			是否默认英文？
+			<br />
+			<input type="radio" id="idSpanish" name="irKeyType" value="DEFAULT_OSD_SPANISH" >
+			是否默认西班牙文？
+			<br />
+			<input type="radio" id="idTurkish" name="irKeyType" value="DEFAULT_OSD_TURKISH" >
+			是否默认土耳其？
+			<br />
+			<input type="radio" id="idItalian" name="irKeyType" value="DEFAULT_OSD_ITALIAN" >
+			是否默认意大利语？
+			<br />
+			<input type="radio" id="idJapanese" name="irKeyType" value="DEFAULT_OSD_JAPANESE" >
+			是否默认日文？
+			<br />
+			<input type="radio" id="idRussian" name="irKeyType" value="DEFAULT_OSD_RUSSIAN" >
+			是否默认俄语？
+			<br />
+			<input type="radio" id="idKorean" name="irKeyType" value="DEFAULT_OSD_KOREAN" >
+			是否默认韩语？
+			<br />
+			<input type="radio" id="idTchinese" name="irKeyType" value="DEFAULT_OSD_TCHINESE" >
+			是否默认繁体中文？
+			<br />
+			<input type="radio" id="idChinese" name="irKeyType" value="DEFAULT_OSD_CHINESE" >
+			是否默认中文？
+			<br />
+			<input type="radio" id="idGermany" name="irKeyType" value="DEFAULT_OSD_GERMANY" >
+			是否默认德文？
+			<br />
+			
+
+		</form>
+		<hr />
+		
+		<form>
+			请选择默认音量级别：
+			<br />
+			<input type="radio" id="idVolType1" name="VolType" checked="checked" value="STD_VOLUME" />
+			标准音量(max=44,数值越小输出越大)
+			<br />
+			<input type="radio" id="idVolType2" name="VolType" value="ZHAOJIN_VOLUME_ADJUST" />
+			赵工的音量(max=56)
+			<br />
+			<input type="radio" id="idVolType3" name="VolType" value="IR1003_VOLUME" />
+			1003的音量(max=75)
+			<br />
+			<input type="radio" id="idVolType4" name="VolType" value="D701_VOLUME_ADJUST" />
+			D701的音量(max=2a)
+			<br />
+			<input type="radio" id="idVolType5" name="VolType" value="H901_VOLUME_ADJUST" />
+			H901的音量(max=45)
+			<br />
+			<input type="radio" id="idVolType6" name="VolType" value="D1004_VOLUME_ADJUST" />
+			D1004的音量(max=56)
+			<br />
+			
+		</form>
+		<hr />
+		
+		<form>
+			请选电视类型 0：模拟电视  1：数字电视  2:不支持电视
+			<select id="selTvType" name = "_EN_DTV">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+			</select>
+		</form>
+		
+		<form>
+			请选电视默认制式：
+			<select id="selTvFormat" name = "_NORMAL_TV_TYPE">
+				<option>_TV_NTSC_M</option>
+				<option>_TV_PAL_I</option>
+				<option>_TV_PAL_M</option>
+			</select>
+		</form>
+		
+		<form>
+			是否支持HDMI 0：不支持  1：支持
+			<select id="selHdmiEn" name = "_HDMI_SUPPORT">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</form>
+		<hr />
+				
+		<input type="button" value="输出文件" onclick=print_text()>
+		<input type="button" value="重置所有" onclick=resetall()>
+		
+		<script type = "text/javascript" defer=true src="mcu2660.js"></script>
+	</body>
+</html>

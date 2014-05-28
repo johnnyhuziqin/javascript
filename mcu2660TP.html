@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=GB2312" />
+		<title>2660 MCU config tool-胡工设计</title>
+		
+
+	</head>
+
+	<body>
+		<hr />
+		<form>
+			
+			<input type="checkbox" id="idVol" value = "ZHAOJIN_VOLUME_ADJUST">
+			赵工的音量调节？
+			<br />
+			
+		</form>
+		<hr />
+		
+		<form id="idModeType">
+			<input type="radio" id="idMd3001" name="irKeyType" checked="checked"  value="MD_3001" >
+			T3001机型（包括T666, T1002）
+			<br />
+			<input type="radio" id="idMd701" name="irKeyType" value="MD_701" >
+			T701机型
+			<br />
+			<input type="radio" id="idMd1004" name="irKeyType" value="MD_T1004" >
+			T1004机型
+			<br />
+
+		</form>
+		<hr />
+
+		
+		<form>
+			<input type="radio" id="id55Key" name="irKeyType" checked="checked" value="USE_55KEYS_IR" >
+			是否支持55键？
+			<br />
+			<input type="radio" id="id44Key" name="irKeyType" value="USE_44KEYS_IR" >
+			是否支持44键？
+			<br />
+		</form>
+		<hr />
+
+		<form>
+			<input type="radio" id="idEnglish" name="irKeyType" checked="checked"  value="DEFAULT_OSD_ENGLISH" >
+			是否默认英文？
+			<br />
+			<input type="radio" id="idSpanish" name="irKeyType" value="DEFAULT_OSD_SPANISH" >
+			是否默认西班牙文？
+			<br />
+			<input type="radio" id="idTurkish" name="irKeyType" value="DEFAULT_OSD_TURKISH" >
+			是否默认土耳其？
+			<br />
+			<input type="radio" id="idItalian" name="irKeyType" value="DEFAULT_OSD_ITALIAN" >
+			是否默认意大利语？
+			<br />
+			<input type="radio" id="idJapanese" name="irKeyType" value="DEFAULT_OSD_JAPANESE" >
+			是否默认日文？
+			<br />
+			<input type="radio" id="idRussian" name="irKeyType" value="DEFAULT_OSD_RUSSIAN" >
+			是否默认俄语？
+			<br />
+			<input type="radio" id="idKorean" name="irKeyType" value="DEFAULT_OSD_KOREAN" >
+			是否默认韩语？
+			<br />
+			<input type="radio" id="idTchinese" name="irKeyType" value="DEFAULT_OSD_TCHINESE" >
+			是否默认繁体中文？
+			<br />
+			<input type="radio" id="idChinese" name="irKeyType" value="DEFAULT_OSD_CHINESE" >
+			是否默认中文？
+			<br />
+			<input type="radio" id="idGermany" name="irKeyType" value="DEFAULT_OSD_GERMANY" >
+			是否默认德文？
+			<br />
+			
+
+		</form>
+		<hr />
+		
+		<form>
+			请选择默认音量级别：
+			<br />
+			<input type="radio" id="idVolType1" name="VolType" checked="checked" value="STD_VOLUME" />
+			标准音量
+			<br />
+			<input type="radio" id="idVolType2" name="VolType" value="ZHAOJIN_VOLUME_ADJUST" />
+			赵工的音量
+			<br />
+			<input type="radio" id="idVolType3" name="VolType" value="IR1003_VOLUME" />
+			1003的音量
+			<br />
+			<input type="radio" id="idVolType4" name="VolType" value="D701_VOLUME_ADJUST" />
+			D701的音量
+			<br />
+			<input type="radio" id="idVolType5" name="VolType" value="H901_VOLUME_ADJUST" />
+			H901的音量
+			<br />
+			<input type="radio" id="idVolType6" name="VolType" value="D1004_VOLUME_ADJUST" />
+			D1004的音量
+			<br />
+			
+		</form>
+		<hr />
+		
+		<form>
+			请选电视类型 0：模拟电视  1：数字电视  2:不支持电视
+			<select id="selTvType" name = "_EN_DTV">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+			</select>
+		</form>
+		
+		<form>
+			是否支持HDMI 0：不支持  1：支持
+			<select id="selHdmiEn" name = "HDMI_SUPPORT">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</form>
+		<hr />
+				
+		<input type="button" value="输出文件" onclick=print_text()>
+		<input type="button" value="重置所有" onclick=resetall()>
+		
+		<script type = "text/javascript" defer=true src="mcu2660.js"></script>
+	</body>
+</html>
